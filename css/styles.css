@@ -805,7 +805,7 @@ body {
     margin-right: 8px;
 }
 
-.modal-form-check:checked+.modal-form-check-desc::before {
+.modal-form-check:checked + .modal-form-check-desc::before {
     background-color: var(--background-accent-color);
     background-image: url(/images/vector.svg);
     background-repeat: no-repeat;
@@ -829,4 +829,11 @@ body {
     border: none;
     border-radius: 4px;
     transition: background-color var(--transition-dur-and-func);
+}
+.modal-form-submit:hover {
+    background-color: var(--background-accent-color);
+
+}
+.modal-form-submit:focus {
+    background-color: var(--background-accent-color);
 }
