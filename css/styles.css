@@ -807,7 +807,7 @@ body {
 
 .modal-form-check:checked + .modal-form-check-desc::before {
     background-color: var(--background-accent-color);
-    background-image: url(./images/vector.svg);
+    background-image: url("../images/vector.svg");
     background-repeat: no-repeat;
     background-position: center center;
 }
