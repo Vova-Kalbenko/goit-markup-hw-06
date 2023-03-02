@@ -417,19 +417,28 @@
           </ul>
         </div>
         <div class="social-messangers">
-          <p class="social-messangers-text">Subscribe</p>
+          <p class="social-messangers-text">
+            Subscribe
+          </p>
+          <form action="" class="social-messangers-form">
+            <label for="" class="socail-messangers-field"
+              ><input class="social-messangers-input" type="email" placeholder="E-mail"/></label
+            ><label class="socail-messangers-field"></label>
+            <button class="social-messangers-button" type="submit">
+              Subscribe
+              <svg class="social-messangers-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
-          <svg class="close-button-icon">
-            <use
-              href="./images/sprite.svg#icon-vector"
-              width="18"
-              height="18"
-            ></use>
+          <svg class="close-button-icon" width="18" height="18">
+            <use href="./images/sprite.svg#icon-vector"></use>
           </svg>
         </button>
         <p class="modal-window-text">
@@ -446,6 +455,7 @@
                 required
                 pattern="[a-zA-Z]+"
                 minlength="2"
+                title="Ivan Ivanov"
               />
               <svg class="modal-form-input-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-person"></use>
@@ -477,14 +487,15 @@
                 class="modal-form-input"
                 required
                 pattern=""
+                title="example@gmail.com"
               />
               <svg class="modal-form-input-icon" width="18" height="18">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </span>
           </label>
-          <label class="modal-form-field">
-            <span class="modal-form-input-desc">Name</span>
+          <label class="modal-form-field-comment">
+            <span class="modal-form-input-desc">Comment</span>
             <textarea
               name="user-message"
               class="modal-form-message"
@@ -495,11 +506,12 @@
             id="user-policy"
             type="checkbox"
             name="user-policy"
-            class="modal-form-check"
+            class="modal-form-check visually-hidden"
           />
           <label for="user-policy" class="modal-form-check-desc"
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a></label
+            >I accept the terms and conditions of the &nbsp;<a href=""
+              >Privacy Policy</a
+            ></label
           >
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
@@ -508,4 +520,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-

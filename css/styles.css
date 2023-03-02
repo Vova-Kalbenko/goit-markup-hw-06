@@ -64,8 +64,8 @@ body {
     background-color: #4D5AE5;
     color: #FFFFFF;
     border: none;
-    margin-right: 466px;
-    margin-left: 466px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 4px;
     transition: background-color var(--transition-dur-and-func);
 }
@@ -469,6 +469,70 @@ body {
     color: #FFFFFF;
 }
 
+.social-messangers-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.social-messangers-form {
+    display: flex;
+}
+
+.socail-messangers-field {
+    background-color: #2E2F42;
+    margin-right: 16px;
+    border-radius: 4px;
+}
+
+.social-messangers-input {
+    min-width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2E2F42;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    color: #FFFFFF;
+    
+}
+
+
+
+.social-messangers-button {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    padding: 8px 24px 8px 24px;
+    border: none;
+    transition: background-color var(--transition-dur-and-func);
+}
+
+.social-messangers-button:hover {
+    background-color: var(--background-accent-color);
+}
+
+.social-messangers-button:focus {
+    background-color: var(--background-accent-color);
+}
+
+.social-messangers-icon {
+    fill: #FFFFFF;
+    margin-left: 16px;
+}
+
+
+
 /* ======================== PORTFOLIO ======================== */
 .portfolio-background {
     background-color: #E5E5E5;
@@ -600,7 +664,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FCFCFC;
-    padding: 40px;
+    padding: 72px 24px 24px 24px;
 }
 
 .close-button {
@@ -642,11 +706,13 @@ body {
 }
 
 .modal-window-text {
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 16px;
 }
 
 .modal-form {
@@ -686,6 +752,10 @@ body {
     margin-bottom: 8px;
 }
 
+.modal-form-field-comment {
+    margin-bottom: 20px;
+}
+
 .modal-form-input-wrapper {
     position: relative;
     display: block;
@@ -704,6 +774,8 @@ body {
     width: 100%;
     height: 100px;
     padding: 10px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     transition: border-color var(--transition-dur-and-func);
 }
 
@@ -712,19 +784,49 @@ body {
     border-color: #4D5AE5;
 }
 
-.modal-form-message::placeholder {
-    text-transform: uppercase;
+
+.modal-form-check-desc {
+    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+    margin-bottom: 24px;
 }
 
 .modal-form-check-desc::before {
-    display: block;
     width: 16px;
     height: 16px;
     content: '';
     border: 1.25px solid #2E2F42;
+    border-radius: 2px;
     cursor: pointer;
-
+    margin-right: 8px;
 }
-.modal-form-check:checked + .modal-form-check-desc::before {
+
+.modal-form-check:checked+.modal-form-check-desc::before {
     background-color: var(--background-accent-color);
+    background-image: url(/images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.modal-form-check:checked+.modal-form-check-desc::before {
+    border: none;
+}
+
+.modal-form-submit {
+    min-width: 169px;
+    padding: 16px 32px 16px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-self: center;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    transition: background-color var(--transition-dur-and-func);
 }
